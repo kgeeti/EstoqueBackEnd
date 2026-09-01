@@ -15,6 +15,26 @@
                 <exec.appArgs></exec.appArgs>
                 <exec.mainClass>br.eti.kge.estoque.EstoqueApplication</exec.mainClass>
                 <exec.executable>java</exec.executable>
+                <Env.POSTGRES_URL>postgresql://ep-long-cake-acjhodyw-pooler.sa-east-1.aws.neon.tech/neondb</Env.POSTGRES_URL>
+                <Env.POSTGRES_USER>neondb_owner</Env.POSTGRES_USER>
+                <Env.POSTGRES_HOST>ep-long-cake-acjhodyw-pooler.sa-east-1.aws.neon.tech</Env.POSTGRES_HOST>
+                <Env.POSTGRES_PASSWORD>npg_mXLh7jeBlvM2</Env.POSTGRES_PASSWORD>
+                <Env.POSTGRES_DATABASE>neondb</Env.POSTGRES_DATABASE>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
             </properties>
         </action>
         <action>
