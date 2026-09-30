@@ -15,11 +15,12 @@
                 <exec.appArgs></exec.appArgs>
                 <exec.mainClass>br.eti.kge.estoque.EstoqueApplication</exec.mainClass>
                 <exec.executable>java</exec.executable>
-                <Env.POSTGRES_URL>postgresql://ep-long-cake-acjhodyw-pooler.sa-east-1.aws.neon.tech/neondb</Env.POSTGRES_URL>
-                <Env.POSTGRES_USER>neondb_owner</Env.POSTGRES_USER>
-                <Env.POSTGRES_HOST>ep-long-cake-acjhodyw-pooler.sa-east-1.aws.neon.tech</Env.POSTGRES_HOST>
-                <Env.POSTGRES_PASSWORD>npg_mXLh7jeBlvM2</Env.POSTGRES_PASSWORD>
-                <Env.POSTGRES_DATABASE>neondb</Env.POSTGRES_DATABASE>
+                <Env.APP_ENVIRONMENT>pgs</Env.APP_ENVIRONMENT>
+                <Env.POSTGRES_URL>postgresql://172.16.5.20/estoqueDB</Env.POSTGRES_URL>
+                <Env.POSTGRES_USER>kge</Env.POSTGRES_USER>
+                <Env.POSTGRES_HOST>172.16.5.20</Env.POSTGRES_HOST>
+                <Env.POSTGRES_PASSWORD>passwordkge</Env.POSTGRES_PASSWORD>
+                <Env.POSTGRES_DATABASE>estoqueDB</Env.POSTGRES_DATABASE>
                 
                 
                 
@@ -70,6 +71,19 @@
                 <exec.mainClass>br.eti.kge.estoque.EstoqueApplication</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <exec.appArgs></exec.appArgs>
+            </properties>
+        </action>
+        <action>
+            <actionName>rebuild</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <skipTests>true</skipTests>
             </properties>
         </action>
     </actions>
